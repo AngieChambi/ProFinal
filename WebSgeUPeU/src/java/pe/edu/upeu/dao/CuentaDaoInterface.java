@@ -6,10 +6,14 @@
 
 package pe.edu.upeu.dao;
 
+import java.util.List;
+import pe.edu.upeu.modelo.FinCuenta;
+import syscenterlife.dmp.core.data.IDataAccess;
+
 /**
  *
  * @author hp
  */
-public interface CuentaDaoInterface {
-    
+public interface CuentaDaoInterface extends IDataAccess<FinCuenta>{
+    public List<FinCuenta> buscarCuenta(String cuenta);
 }
