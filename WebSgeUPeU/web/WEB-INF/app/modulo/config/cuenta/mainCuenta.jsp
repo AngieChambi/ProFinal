@@ -41,27 +41,42 @@
         <c:if test="${!empty ListaCuenta}">
             <table >
                 <tr>
-                    <th>Periodo</th>
-                    <th>F. Inicio</th>
-                    <th>F. fin</th>
-                    <th>Periodo</th>
-                    <th>Temporada</th>
+                    <th>Nombre Elemento</th>
+                    <th>Elemento Codigo</th>
+                    <th>Nombre Cuenta</th>
+                    <th>Cuenta Codigo</th>
+                    <th>Nombre Sub Cuenta</th>
+                    <th>Sub Cuenta Codigo</th>
+                    <th>Nombre Division</th>
+                    <th>Division Codigo</th>
+                    <th>Nombre Sub Division</th>
+                    <th>Sub Division Codigo</th>
+                    <th>Descripcion</th>
+                    <th>Condicion</th>
                     <th>Estado</th>
                     <th>Opciones</th>
                     
                 </tr>
                 
-                <c:forEach items="${ListaPeriodo}" var= "dato">   
+                <c:forEach items="${ListaCuenta}" var= "dato">   
                 <tr>
-                    <td><c:out value="${dato.periodo}"/></td>
-                    <td><c:out value="${dato.fechaInicio}"/></td>
-                    <td><c:out value="${dato.fechaFin}"/></td>
-                    <td><c:out value="${dato.idTemporada.descripcion}"/></td>
+                    <td><c:out value="${dato.nombreelemento}"/></td>
+                    <td><c:out value="${dato.elementocodigo}"/></td>
+                    <td><c:out value="${dato.nombrecuenta}"/></td>
+                    <td><c:out value="${dato.cuentacodigo}"/></td>
+                    <td><c:out value="${dato.nombresubcuenta}"/></td>
+                    <td><c:out value="${dato.subcuentacodigo}"/></td>
+                    <td><c:out value="${dato.nombredivision}"/></td>
+                    <td><c:out value="${dato.divisioncodigo}"/></td>
+                    <td><c:out value="${dato.nombresubdivision}"/></td>
+                    <td><c:out value="${dato.subdivisioncodigo}"/></td>
+                    <td><c:out value="${dato.descripcion}"/></td>
+                    <td><c:out value="${dato.condicion}"/></td>
                     <td><c:out value="${dato.estado}"/></td>
                     <td></td>
                     <td>
-                        <a href="eliminarper.upeu?idperiodox=${dato.idPeriodo}">Eliminar</a>&emsp14;
-                        <a href="modificarPeriodoX.upeu?idPeriodo=${dato.idPeriodo}">Modificar</a>
+                        <a href="eliminarcuen.upeu?idcuentax=${dato.idCuenta}">Eliminar</a>&emsp14;
+                        <a href="modificarCuentaX.upeu?idCuenta=${dato.idCuenta}">Modificar</a>
                     </td>
                     
                 </tr>
