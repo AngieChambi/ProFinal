@@ -6,10 +6,14 @@
 
 package pe.edu.upeu.dao;
 
+import java.util.List;
+import pe.edu.upeu.modelo.FinNivelfinanciero;
+import syscenterlife.dmp.core.data.IDataAccess;
+
 /**
  *
  * @author hp
  */
-public interface NivelFinancieroDaoInterface {
-    
+public interface NivelFinancieroDaoInterface extends IDataAccess<FinNivelfinanciero>{
+    public List<FinNivelfinanciero> buscarNivelFinanciero(String nivelfinanciero);
 }

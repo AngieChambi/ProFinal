@@ -58,7 +58,7 @@ public  ModelAndView eliminarCuenta(HttpServletRequest r) {
 @RequestMapping(value = "formCuenta", method = RequestMethod.GET)
 public ModelAndView irFormulario(@ModelAttribute("modeloCuenta") FinCuenta cuenta,BindingResult result ){
     Map<String, Object> modelo=new HashMap<String, Object> ();
-    return new ModelAndView("modulo/config/periodo/formPeriodo",modelo);
+    return new ModelAndView("modulo/config/cuenta/formCuenta",modelo);
 }
 
 

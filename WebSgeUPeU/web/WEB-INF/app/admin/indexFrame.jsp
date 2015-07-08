@@ -260,7 +260,9 @@
               </a>
               <ul class="treeview-menu">
                   <li class="active"><a href="mainCuenta.upeu" target="home"><i class="fa fa-circle-o"></i>Adm. Cuenta</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Adm. Temporada</a></li>
+                  <li class="active"><a href="mainCuenta.upeu" target="home"><i class="fa fa-circle-o"></i>Adm. Nivel Financiero</a></li>
+                  <li class="active"><a href="mainCuenta.upeu" target="home"><i class="fa fa-circle-o"></i>Adm. Partida Presupuestaria</a></li>
+         
               </ul>
             </li>
 
@@ -307,7 +309,7 @@
 	  
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">      	
-		<iframe  src="home.jsp" width="100%" border="0" align="right" name="home"  style="min-height: 700px; height: 100%;"  ></iframe>		
+		<iframe  src="home.upeu" width="100%" border="0" align="right" name="home"  style="min-height: 700px; height: 100%;"  ></iframe>		
       </div><!-- /.content-wrapper -->
 	  
 	  

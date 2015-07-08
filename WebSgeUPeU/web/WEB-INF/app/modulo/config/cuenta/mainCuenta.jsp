@@ -28,7 +28,7 @@
         <tr align="center">
         &nbsp;&nbsp;
         <td  style="color:black">
-        Periodo <input type="text" class="myinput" id="cuenta" size="50" name="cuenta"  value="">
+        Cuenta <input type="text" class="myinput" id="cuenta" size="50" name="cuenta"  value="">
         
         <input  type="submit"  class="button2" value="Buscar" >&nbsp;
         </td>

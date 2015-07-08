@@ -33,13 +33,13 @@ public class IndexController{
     
     @RequestMapping(value = "dmp1", method = RequestMethod.GET)
     public ModelAndView inicio2(){    
-        return new ModelAndView("david");
+        return new ModelAndView("home");
     }
     
     
-    @RequestMapping(value = "mainPeriodo", method = RequestMethod.GET)
-    public ModelAndView mainPeriodo(){    
-        return new ModelAndView("modulo/config/periodo/mainPeriodo");
+    @RequestMapping(value = "mainCuenta", method = RequestMethod.GET)
+    public ModelAndView mainCuenta(){    
+        return new ModelAndView("modulo/config/cuenta/mainCuenta");
     }
 }
 
